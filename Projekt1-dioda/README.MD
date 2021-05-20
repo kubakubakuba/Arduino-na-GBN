@@ -1,6 +1,6 @@
 # Program na zprovoznění LED diody
 ## Základní struktura programu
-```
+```cpp
 void setup() {
 //setup
 }
@@ -14,7 +14,7 @@ Každý řádek ukončujeme středníkem ; (na české klávesnici nad klávesou
 ```cpp
 int ledPin = 13;
 const int ledPin = 13;
-```cpp
+```
 Zavedeme proměnou typu Integer, s názvem ledPin a vložíme do ní hodnotu 13. Tím si usnadníme pojmenování jednotlivých pinů na desce (nemusíme si pamatovat čísla). Slovo const přidáváme, pokud se jedná o konstantu a do proměnné později nebudeme zapisovat.
 ```cpp
 pinMode(ledPin, OUTPUT);
@@ -64,12 +64,16 @@ void loop() {
 ```
 Pokud si chcete do programu něco poznamenat využijte komentáře za // jsou jednořádkové a mezi /* a \*/ jsou víceřádkové.
 ```cpp
+for(i = 0; i <= VALUE; ++i){
 //jednořádkový komentář
+}
+for(i = 0; i <= VALUE; ++i){
 /*
 více
 řádkový
 komentář
 */
+}
 ```
 Kód vložený mezi komentáře se nebude kompilovat.
 Po napsání připojte desku k počítači, vyberte správný druh desky a COM port.
