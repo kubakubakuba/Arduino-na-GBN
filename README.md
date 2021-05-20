@@ -1,6 +1,6 @@
 # Arduino na GBN
 
-> Node.JS minimal Riot API client written in Typescript
+> Soubor programů a instrukcí k laboratorním pracím s Arduinem
 
 
 ### Použití
