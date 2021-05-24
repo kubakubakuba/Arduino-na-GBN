@@ -11,6 +11,7 @@ void setup() {
   lcd.begin(16, 2);
   Serial.begin(9600);
   lcd.print("Arduino na GBN");
+  delay(2500);
 }
  
 void loop() {
