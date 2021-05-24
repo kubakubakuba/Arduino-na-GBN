@@ -21,9 +21,9 @@ byte a[8]={
   B00000000 
 };
 
-void writeMatrix(int arr, byte leds[8]){
+void writeMatrix(int arr, byte leds[8], LedControl matrixDisplay){
   for(int i = 0; i <= 7; i++){
-    lc.setRow(arr, i, leds[i]);
+    matrixDisplay.setRow(arr, i, leds[i]);
     }
   }
 
@@ -44,5 +44,5 @@ void loop() {
   lc.clearDisplay(0);
   lc.setColumn(0,5,0xFF); 
   delay(3000); */
-  writeMatrix(0, a);
+  writeMatrix(0, a, lc);
 }
