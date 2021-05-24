@@ -68,10 +68,10 @@ byte test[8]={0x00,0xFF,0x00,0xFF,0x00,0xFF,0x00,0xFF};
 ```
 Funkci která nám pak na displej pošle tento byte sestavíme velmi lehce za použití dříve zmíněných funkcí (řádek po řádku přečteme hodnotu a zapíšeme ji na displej).
 ```cpp
-void writeMatrix(int arr, byte leds[8]){
+void writeMatrix(int arr, byte leds[8], LedControl matrixDisplay){
   for(int i = 0; i <= 7; i++){
-    lc.setRow(arr, i, leds[i]);
+    matrixDisplay.setRow(arr, i, leds[i]);
   }
 }
 ```
-Na displej pak vypisujeme způsobem `writeMatrix(0, test);`.
+Na displej pak vypisujeme způsobem `writeMatrix(0, test, lc);`.
