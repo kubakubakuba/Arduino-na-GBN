@@ -1,6 +1,6 @@
 # Čidlo DHT11
 Čidlo zapojíme k arduíno podle následujícího obrázku:
-[comment]: <> (This is a comment, it will not be included)
+<!-- https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/ -->
 ![alt Zapojení 1](https://www.circuitbasics.com/wp-content/uploads/2015/10/Arduino-DHT11-Tutorial-3-Pin-DHT11-Wiring-Diagram-768x391.png)
 ![alt Zapojení 1](https://www.circuitbasics.com/wp-content/uploads/2015/10/Arduino-DHT11-Tutorial-4-Pin-DHT11-Wiring-Diagram-768x356.png)
 
