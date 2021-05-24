@@ -1,5 +1,10 @@
 # Program na zprovoznění LED Matrixu
 Budeme využívat knihovnu LedControl.h
+Displej připojíme následujícím způsobem:
+* DIN (DataIn) na pin 12
+* CLK (Clock) na pin 11
+* CS (LOAD) na pin 10
+Program pak bude následující:
 ```cpp
 #include "LedControl.h"
 
