@@ -18,7 +18,7 @@ void loop() {
   Serial.print("Time: ");
   myTime = millis();
   Serial.println(myTime);
-  lcd.print(time);
+  lcd.print(myTime);
   delay(100);                  
 }
 ```
