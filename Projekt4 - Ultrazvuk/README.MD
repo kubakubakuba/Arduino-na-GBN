@@ -20,7 +20,7 @@ void loop() {
   digitalWrite(TRIG, LOW);
   delayMicroseconds(2);
   digitalWrite(TRIG, HIGH);
-  delayMicrosecond(10);
+  delayMicroseconds(10);
   digitalWrite(TRIG, LOW);
   
   float dist = pulseIn(ECHO, HIGH);
