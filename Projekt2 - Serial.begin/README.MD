@@ -29,7 +29,7 @@ void loop() {
   value = analogRead(analogPin);    
   
   Serial.print("Value = ");                  
-  Serial.print(hodnota);
+  Serial.print(value);
   Serial.println();
  
   delay(1000);                   
