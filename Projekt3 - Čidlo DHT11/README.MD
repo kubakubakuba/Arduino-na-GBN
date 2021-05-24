@@ -4,7 +4,7 @@
 ![alt Zapojení 1](https://www.circuitbasics.com/wp-content/uploads/2015/10/Arduino-DHT11-Tutorial-3-Pin-DHT11-Wiring-Diagram-768x391.png)
 ![alt Zapojení 1](https://www.circuitbasics.com/wp-content/uploads/2015/10/Arduino-DHT11-Tutorial-4-Pin-DHT11-Wiring-Diagram-768x356.png)
 
-Využijeme knihovnu pro ovládání DHT [zde](http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+Využijeme knihovnu pro ovládání DHT [zde](https://github.com/kubakubakuba/Arduino-na-GBN/blob/main/Projekt3%20-%20%C4%8Cidlo%20DHT11/DHT11.rar?raw=true)
 ```cpp
 #include <dht11.h>
  
