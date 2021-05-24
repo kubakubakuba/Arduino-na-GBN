@@ -13,7 +13,7 @@ delay(100);
 ```
 Příkazem `Serial.begin(9600);` ve smyčce setup nastavíme hodnotu rychlosti komunikace na 9600 baudů. Do seriálového monitoru se dostaneme po kliknutí na příslušné tlačítko vpravo nahoře v rohu. Do seriálového portu vypisujeme příkazy `Serial.print()` a `Serial.println()`, druhý příkaz vypíše nový řádek.
 
-Nyní tyto znalosti můžeme yužít k vypisování hodnoty odporu potenciometru:
+Nyní tyto znalosti můžeme využít k vypisování hodnoty odporu potenciometru:
 
 ![alt Zapojení potenciometru](https://arduino8.webnode.cz/_files/200000038-6bc7a6cca5/ScreenShot003.jpg)
 
