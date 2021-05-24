@@ -58,7 +58,9 @@ void loop(){
 ```
 Jelikož funkce digitalRead() vrací hodnotu 1 nebo 0 (tzn. HIGH nebo LOW), můžeme ji zapsat na ledku a tím ji ovládat).
 
-Program můžeme strochu zkomplikovat konstantním ON nebo OFF na diodě, změní se po zmáčknutí tlačítka.
+![alt Zapojení](https://github.com/kubakubakuba/Arduino-na-GBN/blob/main/images/ledButton.png?raw=true)
+
+Program můžeme trochu zkomplikovat konstantním ON nebo OFF na diodě, změní se po zmáčknutí tlačítka.
 ```cpp
 const int ledPin = 5;
 const int buttonPin = 6;
