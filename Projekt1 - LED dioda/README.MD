@@ -21,8 +21,8 @@ pinMode(ledPin, OUTPUT);
 ```
 Funkcí pinMode() řekneme, že na pinu ledPin máme výstupní zařízení.
 ```cpp
-digitalWrite(pinMode, HIGH);
-digitalWrite(pinMode, LOW);
+digitalWrite(ledPin, HIGH);
+digitalWrite(ledPin, LOW);
 ```
 Funkcí digitalWrite() zapíšeme digitální jedničku pokud zapíšeme HIGH (maximální napětí), digitální nulu pokud LOW (nulové napětí). Exituje i funkce analogWrite(), tou nezapisujeme hodnoty HIGH / LOW, ale hodnoty od 0 - 255, tím regulujeme výstupní napětí.
 ```cpp
