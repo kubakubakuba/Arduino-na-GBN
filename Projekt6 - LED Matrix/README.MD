@@ -1,7 +1,7 @@
 # Zprovoznění LED Matrixu
 Led Matrix pipojíme k Arduínu za využití následujícíího schématu a tabulky rozmístění pinů:
-![Zapojení Matrixu]()
-![Pinout Matrixu](https://osoyoo.com/wp-content/uploads/2017/07/1-3.png)
+
+![alt Pinout Matrixu](https://osoyoo.com/wp-content/uploads/2017/07/1-3.png)
 
 <table summary="Mapping: LED Matrix pin numbers to rows and columns to Arduino pin numbers" border="1" align="center">
 <tbody>
