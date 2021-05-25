@@ -110,7 +110,18 @@ Led Matrix pipojíme k Arduínu za využití následujícíího schématu a tabu
 </tbody>
 </table>
 
+Dále pak ke každé diodě přistupujeme jako k jednotlivé, pouze však vždy musíme spojit dva piny - jeden na LOW druhý na HIGH. - zde příklad:
 
+```cpp
+void setup() {
+  pinMode(13,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+void loop() {
+  digitalWrite(13,LOW);//set the pin11 low，led will be turned on 
+  digitalWrite(11,HIGH);//set the pin 11 high，led will be turned off。
+}
+```
 
 # Program na zprovoznění LED Matrixu s řadičem MAX72XX
 Budeme využívat knihovnu LedControl.h
