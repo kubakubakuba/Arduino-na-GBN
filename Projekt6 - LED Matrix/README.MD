@@ -17,6 +17,76 @@ void loop() {
   digitalWrite(11,HIGH);
 }
 ```
+Zprovoznění celého matrixu je již však komplikovanější než jednotlivých diod, zde je celý kód:
+```cpp
+#define REFRESH 50 //refresh rate in microseconds
+
+const int rows[8] = {2, 7, A5, 5, 13, A4, 12, A2};
+const int cols[8] = {6, 11, 10, 3, A3, 4, 8, 9};
+
+void setup() {
+  Serial.begin(9600);
+  for(int i = 0; i <= 7; i++){
+    pinMode(rows[i],OUTPUT);
+    pinMode(cols[i],OUTPUT);
+    }
+ for(int i = 0; i <= 7; i++){
+    digitalWrite(rows[i],LOW);
+    }
+}
+
+void clearRows(){
+  for(int i = 0; i <= 7; i++){
+    digitalWrite(rows[i],HIGH);
+    }
+  }
+
+void clearCols(){
+  for(int i = 0; i <= 7; i++){
+    digitalWrite(cols[i],LOW);
+    }
+  }
+
+void ledOn(int x, int y){
+  clearRows();
+  clearCols();
+  digitalWrite(rows[x],LOW);
+  digitalWrite(cols[y],HIGH);
+  }
+
+void printRow(int x, byte matrixByte[8]){
+  for(int i = 0; i <= 7; i++){
+    int bitNow = bitRead(matrixByte[x], 7 - i);
+    if(bitNow){
+      ledOn(x,i);
+      }
+    delayMicroseconds(REFRESH);
+    }
+  }
+
+void printMatrix(byte matrixByteIn[8]){
+  for(int i = 0; i <= 7; i++){
+    printRow(i, matrixByteIn);
+    }
+  }
+  
+byte test[8]={
+  B10000011,
+  B11111111,
+  B00110000,
+  B10111111,
+  B00001100,
+  B11111111,
+  B00000000,
+  B11111111 
+};
+
+byte test2[8]={0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF};
+
+void loop() {
+  printMatrix(test);
+}
+```
 
 # Program na zprovoznění LED Matrixu s řadičem MAX72XX
 Budeme využívat knihovnu LedControl.h
