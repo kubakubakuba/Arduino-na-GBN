@@ -37,7 +37,7 @@ void setup() {
 
 void clearRows(){
   for(int i = 0; i <= 7; i++){
-    digitalWrite(rows[i],HIGH);
+    digitalWrite(rows[i],LOW);
     }
   }
 
