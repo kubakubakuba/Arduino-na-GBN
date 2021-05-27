@@ -30,7 +30,7 @@ void setup() {
     pinMode(rows[i],OUTPUT);
     pinMode(cols[i],OUTPUT);
     }
- for(int i = 0; i <= 7; i++){
+  for(int i = 0; i <= 7; i++){
     digitalWrite(rows[i],LOW);
     }
 }
