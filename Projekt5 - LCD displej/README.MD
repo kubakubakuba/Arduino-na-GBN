@@ -25,4 +25,4 @@ void loop() {
 ```
 Displej k arduinu připojíme podle následujícího schématu:
 
-![alt Zapojení LCD displeje](https://arduino8.webnode.cz/_files/200000042-ea663ebf3d/ScreenShot006.jpg)
+![alt Zapojení LCD displeje](https://github.com/kubakubakuba/Arduino-na-GBN/blob/main/Projekt5%20-%20LCD%20displej/ScreenShot006.jpg)
