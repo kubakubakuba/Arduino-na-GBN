@@ -1,5 +1,5 @@
 # Zprovoznění LED Matrixu
-Led Matrix pipojíme k Arduínu za využití následujícíího schématu a tabulky rozmístění pinů:
+Led Matrix pipojíme k Arduinu za využití následujícíího schématu a tabulky rozmístění pinů:
 
 ![alt matrix](https://www.circuitstoday.com/wp-content/uploads/2016/04/8X8-Matrix-Pinout-800x406.png)
 
